@@ -1,4 +1,2 @@
 @extends('layouts.layout')
-@section('content')
-
-@endsection
+{{-- Rest all is handled by livewire? --}}
