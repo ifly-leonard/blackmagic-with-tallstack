@@ -7,17 +7,15 @@
     <title>Black Magic with TALL Stack</title>
     <style>[x-cloak] { display: none !important; }</style>
 
-    @livewireStyles
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
-
-
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
     <script src="{{ asset('alpine.js') }}" defer></script>
-
+    @livewireStyles
+    @livewireScripts
 </head>
 <body class="antialiased">
-
     <div>
         @auth
         <livewire:home-screen />
@@ -27,11 +25,5 @@
             <livewire:auth-screen />
         @endguest
     </div>
-
-
-
-
-    @livewireScripts
-    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 </body>
 </html>
